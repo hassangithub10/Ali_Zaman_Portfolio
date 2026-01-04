@@ -168,10 +168,10 @@ export default function Skills() {
                                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                     transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
                                     whileHover={{ scale: 1.05 }}
-                                    className="flex flex-col items-center gap-3 p-4 bg-dark-900/50 rounded-xl card-hover cursor-default"
+                                    className="flex flex-col items-center gap-3 p-4 bg-dark-900/50 rounded-xl card-hover cursor-default hover:bg-[#ffda1a]"
                                 >
                                     <span className="text-3xl">{tech.icon}</span>
-                                    <span className="text-sm font-medium text-light-200">{tech.name}</span>
+                                    <span className="text-sm font-medium text-light-200 hover:text-[#0d0d0d] transition-colors">{tech.name}</span>
                                 </motion.div>
                             ))}
                         </div>

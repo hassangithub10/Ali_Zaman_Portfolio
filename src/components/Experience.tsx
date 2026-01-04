@@ -7,7 +7,7 @@ import { Calendar, MapPin, Building, ChevronRight } from "lucide-react";
 const experiences = [
     {
         id: 1,
-        company: "Nishat Linen [Pvt.] Ltd.",
+        company: "Nishat Linen Pvt. Ltd.",
         role: "Head of Department (Strategic/Management)",
         type: "Local/Export",
         period: "2021 – Present",
@@ -168,7 +168,7 @@ export default function Experience() {
                                         </span>
                                         <h3 className="text-2xl font-bold text-light-100 mb-2">{exp.role}</h3>
                                         <div className="flex items-center gap-2 text-light-300">
-                                            <Building size={16} className="text-accent-secondary" />
+                                            <Building size={16} className="text-[#ffda1a]" />
                                             <span>{exp.company}</span>
                                         </div>
                                     </div>

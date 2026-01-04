@@ -41,11 +41,10 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 mt-4"
+                        className="text-4xl md:text-7xl lg:text-8xl font-bold mb-6 mt-6"
                     >
-                        <span className="text-light-100">ENGR. ALI</span>
-                        <br />
-                        <span className="gradient-text">ZAMAN</span>
+                        {/* <span className="text-light-100"></span> */}
+                        <span className="gradient-text">ENGR. ALI ZAMAN</span>
                     </motion.h1>
 
                     {/* Title */}

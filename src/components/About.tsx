@@ -129,7 +129,7 @@ export default function About() {
                                 >
                                     <item.icon
                                         size={24}
-                                        className="text-accent-primary mb-3 group-hover:text-accent-secondary transition-colors"
+                                        className="text-accent-primary mb-3 group-hover:text-[#ffda1a] transition-colors"
                                     />
                                     <h4 className="font-semibold text-light-100 mb-1">{item.title}</h4>
                                     <p className="text-sm text-light-300">{item.description}</p>

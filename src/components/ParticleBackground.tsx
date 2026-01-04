@@ -55,7 +55,7 @@ function GlowingSphere() {
         <mesh ref={ref} position={[0, 0, 0]}>
             <icosahedronGeometry args={[2, 1]} />
             <meshBasicMaterial
-                color="#a40000"
+                color="#ffda1a"
                 wireframe
                 transparent
                 opacity={0.2}

@@ -144,7 +144,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-light-100/5">
                     <p className="text-light-300/60 text-sm">
-                        © {new Date().getFullYear()} Engr. Ali Zaman. All rights reserved.
+                        © {new Date().getFullYear()} Engr. Ali Zaman. All Rights Reserved.
                     </p>
 
                     <motion.button
@@ -154,7 +154,7 @@ export default function Footer() {
                         className="flex items-center gap-2 px-4 py-2 text-sm text-light-300 hover:text-light-100 glass rounded-full transition-colors"
                     >
                         <ArrowUp size={16} />
-                        Back to top
+                        Back to Top
                     </motion.button>
                 </div>
             </div>

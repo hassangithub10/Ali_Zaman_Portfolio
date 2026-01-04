@@ -95,7 +95,7 @@ export default function Education() {
                                 </h3>
 
                                 <div className="flex items-center gap-2 text-light-300 mb-3">
-                                    <MapPin size={14} className="text-accent-secondary" />
+                                    <MapPin size={14} className="text-[#ffda1a]" />
                                     <span className="text-sm">{item.institution}</span>
                                 </div>
 
