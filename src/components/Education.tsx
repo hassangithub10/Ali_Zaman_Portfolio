@@ -40,7 +40,7 @@ export default function Education() {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     return (
-        <section id="education" className="py-24 relative overflow-hidden bg-brand-linkwater">
+        <section id="education" className="py-16 relative overflow-hidden bg-brand-linkwater">
             {/* Background Effects */}
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-cobalt/5 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-brand-malibu/10 rounded-full blur-3xl" />

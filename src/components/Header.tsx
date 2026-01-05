@@ -56,7 +56,7 @@ export default function Header() {
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="relative text-sm font-black text-brand-madison/60 hover:text-brand-cobalt transition-colors duration-300 group uppercase tracking-widest"
+                            className="relative text-sm font-semibold text-brand-madison hover:text-brand-cobalt transition-colors duration-300 group uppercase"
                         >
                             {link.name}
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-cobalt group-hover:w-full transition-all duration-300"></span>
@@ -69,7 +69,7 @@ export default function Header() {
                         transition={{ duration: 0.5, delay: 0.5 }}
                         whileHover={{ scale: 1.05, y: -2 }}
                         whileTap={{ scale: 0.95 }}
-                        className="px-8 py-3 text-sm font-black text-white bg-gradient-to-r from-brand-cobalt to-brand-malibu rounded-full shadow-lg shadow-brand-cobalt/20 hover:shadow-brand-cobalt/40 transition-all duration-300 uppercase tracking-widest"
+                        className="px-8 py-3 text-sm font-semibold text-white bg-gradient-to-r from-brand-cobalt to-brand-malibu rounded-full shadow-lg shadow-brand-cobalt/20 hover:shadow-brand-cobalt/40 transition-all duration-300 uppercase tracking-widest"
                     >
                         Let&apos;s Connect
                     </motion.a>

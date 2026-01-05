@@ -75,7 +75,7 @@ export default function Experience() {
     const [activeExp, setActiveExp] = useState(1);
 
     return (
-        <section id="experience" className="py-24 relative overflow-hidden bg-brand-linkwater">
+        <section id="experience" className="py-16 relative overflow-hidden bg-brand-linkwater">
             {/* Background Effects */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-brand-malibu/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-72 h-72 bg-brand-cobalt/5 rounded-full blur-3xl" />
@@ -169,13 +169,13 @@ export default function Experience() {
                                 {/* Header */}
                                 <div className="flex flex-wrap items-start justify-between gap-6 mb-8 border-b border-brand-cobalt/10 pb-6">
                                     <div>
-                                        <span className="inline-block px-4 py-1.5 text-xs font-black text-white bg-brand-cobalt rounded-full mb-4 shadow-md">
+                                        <span className="inline-block px-4 py-1.5 text-xs font-semibold text-white bg-brand-cobalt rounded-full mb-4 shadow-md">
                                             {exp.type}
                                         </span>
-                                        <h3 className="text-2xl md:text-3xl font-black text-brand-madison mb-3">{exp.role}</h3>
+                                        <h3 className="text-xl md:text-xl font-black text-brand-madison mb-3">{exp.role}</h3>
                                         <div className="flex items-center gap-2 text-brand-madison/70 font-bold">
                                             <Building size={18} className="text-brand-cobalt" />
-                                            <span>{exp.company}</span>
+                                            <span className="text-brand-cobalt font-semibold">{exp.company}</span>
                                         </div>
                                     </div>
                                     <div className="flex flex-col gap-2">

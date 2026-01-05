@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, MapPin, Briefcase, Globe } from "lucide-react";
 import dynamic from "next/dynamic";
@@ -19,29 +20,45 @@ const stats = [
 ];
 
 export default function Hero() {
+    const [isExpanded, setIsExpanded] = useState(false);
+
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-linkwater">
             <ParticleBackground />
 
+            {/* Fixed Availability Badge */}
+            <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 1.5 }}
+                className="fixed bottom-6 right-6 z-50 flex items-center"
+            >
+                <motion.div
+                    onClick={() => setIsExpanded(!isExpanded)}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className={`flex items-center mb-16 gap-2 p-3 sm:px-4 sm:py-2 rounded-full glass border border-brand-cobalt/10 shadow-lg cursor-pointer transition-all duration-300 ${isExpanded ? 'pr-6' : ''}`}
+                >
+                    <div className="relative">
+                        <span className="flex w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                        <span className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-75"></span>
+                    </div>
+                    <span className={`text-md text-brand-madison font-semibold whitespace-nowrap overflow-hidden transition-all duration-300 ${isExpanded ? 'w-auto' : 'w-0 sm:w-auto'}`}>
+                        Available for Opportunities
+                    </span>
+                </motion.div>
+            </motion.div>
+
             <div className="container-custom relative z-10 pt-24">
                 <div className="max-w-4xl mx-auto text-center">
-                    {/* Badge */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full glass"
-                    >
-                        <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
-                        <span className="text-sm text-brand-madison font-medium">Available for Opportunities</span>
-                    </motion.div>
+                    {/* Badge moved to bottom-right fixed */}
 
                     {/* Name */}
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-4xl md:text-7xl lg:text-8xl font-bold mb-6 mt-6"
+                        className="text-4xl md:text-7xl lg:text-8xl font-bold mb-6 mt-20"
                     >
                         <span className="gradient-text">ENGR. ALI ZAMAN</span>
                     </motion.h1>
@@ -136,12 +153,12 @@ export default function Hero() {
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
-                            className="text-center p-6 glass rounded-2xl card-hover border border-brand-cobalt/5"
+                            className="text-center p-4 glass rounded-2xl card-hover border border-brand-cobalt/5 hover:border-brand-cobalt transition-colors duration-300"
                         >
-                            <div className="text-3xl md:text-4xl font-black gradient-text mb-2">
+                            <div className="text-3xl md:text-4xl font-black text-brand-madison mb-2">
                                 {stat.value}
                             </div>
-                            <div className="text-sm font-bold text-brand-madison/60">{stat.label}</div>
+                            <div className="text-md font-semibold text-brand-madison">{stat.label}</div>
                         </motion.div>
                     ))}
                 </motion.div>

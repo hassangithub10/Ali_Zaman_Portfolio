@@ -63,7 +63,7 @@ export default function Footer() {
                         href="mailto:ali.zaman.khokhar@gmail.com"
                         whileHover={{ scale: 1.05, y: -2 }}
                         whileTap={{ scale: 0.95 }}
-                        className="inline-flex items-center gap-3 px-8 py-4 text-sm font-black text-white bg-gradient-to-r from-brand-cobalt to-brand-malibu rounded-full shadow-lg shadow-brand-cobalt/20 hover:shadow-brand-cobalt/40 transition-all uppercase tracking-widest"
+                        className="inline-flex items-center gap-3 px-8 py-4 text-md font-semibold text-white bg-gradient-to-r from-brand-cobalt to-brand-malibu rounded-full shadow-lg shadow-brand-cobalt/20 hover:shadow-brand-cobalt/40 transition-all tracking-widest"
                     >
                         <Mail size={18} />
                         ali.zaman.khokhar@gmail.com

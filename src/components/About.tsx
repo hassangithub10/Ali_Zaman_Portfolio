@@ -32,7 +32,7 @@ export default function About() {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     return (
-        <section id="about" className="py-24 relative overflow-hidden bg-brand-hawkes">
+        <section id="about" className="py-16 relative overflow-hidden bg-brand-hawkes">
             {/* Background Effects */}
             <div className="absolute top-1/2 left-0 w-72 h-72 bg-brand-cobalt/5 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-malibu/10 rounded-full blur-3xl" />
@@ -64,18 +64,18 @@ export default function About() {
                     >
                         <div className="relative w-full max-w-md mx-auto">
                             {/* Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-brand-cobalt to-brand-malibu rounded-3xl blur-2xl opacity-10 animate-pulse" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-brand-cobalt to-brand-malibu rounded-2xl blur-2xl opacity-10 animate-pulse" />
 
                             {/* Image Container */}
                             <div className="relative glass rounded-3xl p-3 border-glow">
                                 <div className="w-full aspect-square rounded-2xl bg-gradient-to-br from-brand-linkwater to-white flex items-center justify-center overflow-hidden">
-                                    {/* Placeholder with initials */}
-                                    <div className="text-center">
-                                        <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-brand-cobalt to-brand-malibu flex items-center justify-center mb-4 shadow-2xl">
-                                            <span className="text-6xl font-black text-white">AZ</span>
-                                        </div>
-                                        <p className="text-brand-madison font-bold">Engr. Ali Zaman</p>
-                                    </div>
+                                    <motion.img
+                                        src="/profile.png"
+                                        alt="Engr. Ali Zaman"
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                        initial={{ filter: "grayscale(100%)" }}
+                                        whileHover={{ filter: "grayscale(0%)" }}
+                                    />
                                 </div>
                             </div>
 

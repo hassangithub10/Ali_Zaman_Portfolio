@@ -30,7 +30,7 @@ function ParticleField() {
         <Points ref={ref} positions={particlesPosition} stride={3} frustumCulled={false}>
             <PointMaterial
                 transparent
-                color="#0047ab"
+                color="#05245a"
                 size={0.02}
                 sizeAttenuation={true}
                 depthWrite={false}
@@ -55,10 +55,10 @@ function GlowingSphere() {
         <mesh ref={ref} position={[0, 0, 0]}>
             <icosahedronGeometry args={[2, 1]} />
             <meshBasicMaterial
-                color="#0047ab"
+                color="#05245a"
                 wireframe
                 transparent
-                opacity={0.15}
+                opacity={0.10}
             />
         </mesh>
     );

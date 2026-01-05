@@ -36,7 +36,7 @@ const config: Config = {
                 },
             },
             fontFamily: {
-                sans: ["Inter", "system-ui", "sans-serif"],
+                sans: ["Quera Demo", "Inter", "system-ui", "sans-serif"],
             },
             animation: {
                 "float": "float 6s ease-in-out infinite",

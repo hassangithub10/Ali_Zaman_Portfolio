@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* Quera Demo Font Placeholder - User to provide files in /public/fonts/ */
+@font-face {
+  font-family: 'Quera Demo';
+  src: url('/fonts/QueraDemo-Regular.woff2') format('woff2'),
+    url('/fonts/QueraDemo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;

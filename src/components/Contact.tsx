@@ -86,7 +86,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="py-24 relative overflow-hidden bg-brand-hawkes">
+        <section id="contact" className="py-16 relative overflow-hidden bg-brand-hawkes">
             {/* Background Effects */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-brand-cobalt/5 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-malibu/10 rounded-full blur-3xl" />
@@ -128,7 +128,7 @@ export default function Contact() {
                                         value={formData.name}
                                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                         className="w-full pl-14 pr-6 py-4 bg-white border border-brand-cobalt/10 rounded-2xl text-brand-madison placeholder-brand-madison/30 focus:border-brand-cobalt focus:ring-4 focus:ring-brand-cobalt/5 transition-all outline-none font-medium shadow-sm"
-                                        placeholder="John Doe"
+                                        placeholder="Name"
                                         required
                                     />
                                 </div>
@@ -143,7 +143,7 @@ export default function Contact() {
                                         value={formData.email}
                                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                         className="w-full pl-14 pr-6 py-4 bg-white border border-brand-cobalt/10 rounded-2xl text-brand-madison placeholder-brand-madison/30 focus:border-brand-cobalt focus:ring-4 focus:ring-brand-cobalt/5 transition-all outline-none font-medium shadow-sm"
-                                        placeholder="john@example.com"
+                                        placeholder="Your Email"
                                         required
                                     />
                                 </div>
@@ -158,7 +158,7 @@ export default function Contact() {
                                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                         rows={4}
                                         className="w-full pl-14 pr-6 py-5 bg-white border border-brand-cobalt/10 rounded-2xl text-brand-madison placeholder-brand-madison/30 focus:border-brand-cobalt focus:ring-4 focus:ring-brand-cobalt/5 transition-all outline-none resize-none font-medium shadow-sm"
-                                        placeholder="Your message..."
+                                        placeholder="Your Message..."
                                         required
                                     />
                                 </div>
