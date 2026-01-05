@@ -9,23 +9,30 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                // High-Contrast Palette
+                // Premium Blue Palette
+                brand: {
+                    cobalt: "#0047ab",   // Primary Accent
+                    malibu: "#87c4ff",   // Secondary Accent
+                    madison: "#05245a",  // Deep Highlight / Headings
+                    linkwater: "#e6eef6", // Odd Section Background
+                    hawkes: "#cce6ff",    // Even Section Background
+                },
+                // Adaptation for the new theme
                 dark: {
-                    900: "#0d0d0d",  // Cod Gray - primary background
-                    800: "#1a1a1a",  // Secondary background
-                    700: "#242424",  // Lighter gray
-                    600: "#2a2a2a",  // Variant
+                    900: "#05245a",  // Deepest blue instead of black
+                    800: "#e6eef6",  // Odd bg
+                    700: "#cce6ff",  // Even bg
+                    600: "#87c4ff",  // Accent
                 },
                 accent: {
-                    primary: "#ffda1a",   // Candlelight Yellow - primary accent
-                    secondary: "#a40000", // Bright Red - secondary accent
-                    brown: "#332113",     // Keeping for legacy or sub-accents
+                    primary: "#0047ab",
+                    secondary: "#87c4ff",
+                    deep: "#05245a",
                 },
-                // Light colors for text
                 light: {
-                    100: "#ffffff",  // White for text
-                    200: "#f4f4f4",  // Wild Sand
-                    300: "#cccccc",  // Muted text
+                    100: "#ffffff",
+                    200: "#e6eef6",
+                    300: "#05245a", // Muted text is now dark blue
                 },
             },
             fontFamily: {
@@ -44,8 +51,8 @@ const config: Config = {
                     "50%": { transform: "translateY(-20px)" },
                 },
                 "pulse-glow": {
-                    "0%, 100%": { boxShadow: "0 0 20px rgba(255, 218, 26, 0.4)" },
-                    "50%": { boxShadow: "0 0 40px rgba(164, 0, 0, 0.6)" },
+                    "0%, 100%": { boxShadow: "0 0 20px rgba(0, 71, 171, 0.4)" },
+                    "50%": { boxShadow: "0 0 40px rgba(135, 196, 255, 0.6)" },
                 },
                 gradient: {
                     "0%, 100%": { backgroundPosition: "0% 50%" },
@@ -61,9 +68,9 @@ const config: Config = {
                 },
             },
             boxShadow: {
-                "glow-red": "0 0 30px rgba(164, 0, 0, 0.4)",
-                "glow-dark": "0 0 30px rgba(255, 218, 26, 0.5)",
-                "glow-brown": "0 0 30px rgba(164, 0, 0, 0.4)",
+                "glow-primary": "0 0 30px rgba(0, 71, 171, 0.4)",
+                "glow-secondary": "0 0 30px rgba(135, 196, 255, 0.5)",
+                "glow-deep": "0 0 30px rgba(5, 36, 90, 0.4)",
             },
         },
     },

@@ -32,10 +32,10 @@ export default function About() {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     return (
-        <section id="about" className="py-16 relative overflow-hidden bg-dark-800">
+        <section id="about" className="py-24 relative overflow-hidden bg-brand-hawkes">
             {/* Background Effects */}
-            <div className="absolute top-1/2 left-0 w-72 h-72 bg-accent-primary/5 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent-secondary/5 rounded-full blur-3xl" />
+            <div className="absolute top-1/2 left-0 w-72 h-72 bg-brand-cobalt/5 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-malibu/10 rounded-full blur-3xl" />
 
             <div className="container-custom relative z-10" ref={ref}>
                 {/* Section Header */}
@@ -43,13 +43,13 @@ export default function About() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
+                    className="text-center mb-20"
                 >
                     <span className="number-badge">01</span>
-                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-4 text-light-100">
+                    <h2 className="text-4xl md:text-5xl font-black mt-4 mb-4 text-brand-madison">
                         About <span className="gradient-text">Me</span>
                     </h2>
-                    <p className="text-light-300 max-w-2xl mx-auto">
+                    <p className="text-brand-madison/70 max-w-2xl mx-auto font-medium">
                         Engineer, product merchandiser, and supply chain leader with over a decade of experience
                     </p>
                 </motion.div>
@@ -64,17 +64,17 @@ export default function About() {
                     >
                         <div className="relative w-full max-w-md mx-auto">
                             {/* Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-3xl blur-2xl opacity-20 animate-pulse" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-brand-cobalt to-brand-malibu rounded-3xl blur-2xl opacity-10 animate-pulse" />
 
                             {/* Image Container */}
-                            <div className="relative glass rounded-3xl p-2 border-glow">
-                                <div className="w-full aspect-square rounded-2xl bg-gradient-to-br from-dark-900 to-dark-700 flex items-center justify-center overflow-hidden">
+                            <div className="relative glass rounded-3xl p-3 border-glow">
+                                <div className="w-full aspect-square rounded-2xl bg-gradient-to-br from-brand-linkwater to-white flex items-center justify-center overflow-hidden">
                                     {/* Placeholder with initials */}
                                     <div className="text-center">
-                                        <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-accent-primary to-accent-secondary flex items-center justify-center mb-4">
-                                            <span className="text-6xl font-bold text-light-100">AZ</span>
+                                        <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-brand-cobalt to-brand-malibu flex items-center justify-center mb-4 shadow-2xl">
+                                            <span className="text-6xl font-black text-white">AZ</span>
                                         </div>
-                                        <p className="text-light-300 text-sm">Engr. Ali Zaman</p>
+                                        <p className="text-brand-madison font-bold">Engr. Ali Zaman</p>
                                     </div>
                                 </div>
                             </div>
@@ -83,9 +83,9 @@ export default function About() {
                             <motion.div
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 3, repeat: Infinity }}
-                                className="absolute -bottom-4 -right-4 px-4 py-2 glass rounded-full"
+                                className="absolute -bottom-4 -right-4 px-6 py-3 glass rounded-full border border-brand-cobalt/20 shadow-xl"
                             >
-                                <span className="text-sm font-medium gradient-text">12+ Years</span>
+                                <span className="text-sm font-black gradient-text">13+ Years</span>
                             </motion.div>
                         </div>
                     </motion.div>
@@ -96,23 +96,23 @@ export default function About() {
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
-                        <h3 className="text-2xl font-bold mb-6 text-light-100">
+                        <h3 className="text-2xl md:text-3xl font-black mb-6 text-brand-madison leading-tight">
                             Transforming Businesses Through Strategic Excellence
                         </h3>
 
-                        <div className="space-y-4 text-light-300 mb-8">
+                        <div className="space-y-6 text-brand-madison/80 mb-10 font-medium leading-relaxed">
                             <p>
                                 As an engineer, product merchandiser, and supply chain lead over the decade,
-                                I have been able to unlock <span className="text-light-100 font-medium">Problem Solving</span>,
-                                <span className="text-light-100 font-medium"> Change Management</span>,
-                                <span className="text-light-100 font-medium"> Strategic Planning</span> and
-                                <span className="text-light-100 font-medium"> Decision Making</span> which are key to run any
+                                I have been able to unlock <span className="text-brand-cobalt font-bold">Problem Solving</span>,
+                                <span className="text-brand-cobalt font-bold"> Change Management</span>,
+                                <span className="text-brand-cobalt font-bold"> Strategic Planning</span> and
+                                <span className="text-brand-cobalt font-bold"> Decision Making</span> which are key to run any
                                 business and any product locally and globally.
                             </p>
                             <p>
-                                I&apos;m <span className="text-light-200 font-medium">Adaptable</span> - with international
-                                exposure through official visits to <span className="text-light-100 font-medium">Singapore</span> and
-                                <span className="text-light-100 font-medium"> Thailand</span>, bringing global perspectives to
+                                I&apos;m <span className="text-brand-cobalt font-bold underline decoration-brand-malibu/30">Adaptable</span> - with international
+                                exposure through official visits to <span className="text-brand-madison font-bold">Singapore</span> and
+                                <span className="text-brand-madison font-bold"> Thailand</span>, bringing global perspectives to
                                 local operations.
                             </p>
                         </div>
@@ -125,14 +125,14 @@ export default function About() {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                                     transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                                    className="p-4 glass rounded-xl card-hover group"
+                                    className="p-5 glass rounded-2xl card-hover group border border-brand-cobalt/5"
                                 >
                                     <item.icon
-                                        size={24}
-                                        className="text-accent-primary mb-3 group-hover:text-[#ffda1a] transition-colors"
+                                        size={28}
+                                        className="text-brand-cobalt mb-4 group-hover:scale-110 transition-transform"
                                     />
-                                    <h4 className="font-semibold text-light-100 mb-1">{item.title}</h4>
-                                    <p className="text-sm text-light-300">{item.description}</p>
+                                    <h4 className="font-bold text-brand-madison mb-1">{item.title}</h4>
+                                    <p className="text-sm text-brand-madison/60 font-medium">{item.description}</p>
                                 </motion.div>
                             ))}
                         </div>

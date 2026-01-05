@@ -12,15 +12,15 @@ const ParticleBackground = dynamic(() => import("./ParticleBackground"), {
 });
 
 const stats = [
-    { label: "Years Experience", value: "12+" },
+    { label: "Years Experience", value: "13+" },
     { label: "Projects Delivered", value: "50+" },
     { label: "Companies Transformed", value: "6" },
-    { label: "Countries Visited", value: "3" },
+    { label: "Countries Visited", value: "2" },
 ];
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dark-900">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-linkwater">
             <ParticleBackground />
 
             <div className="container-custom relative z-10 pt-24">
@@ -32,8 +32,8 @@ export default function Hero() {
                         transition={{ duration: 0.6 }}
                         className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full glass"
                     >
-                        <span className="w-3 h-3 bg-green-600 rounded-full animate-pulse"></span>
-                        <span className="text-sm text-light-300">Available for Opportunities</span>
+                        <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                        <span className="text-sm text-brand-madison font-medium">Available for Opportunities</span>
                     </motion.div>
 
                     {/* Name */}
@@ -53,13 +53,13 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="flex flex-wrap items-center justify-center gap-3 mb-8"
                     >
-                        <span className="px-4 py-2 text-sm font-medium text-dark-900 bg-accent-primary/80 rounded-full border border-accent-primary/40">
+                        <span className="px-4 py-2 text-sm font-medium text-white bg-brand-cobalt rounded-full shadow-lg">
                             Strategic Planning
                         </span>
-                        <span className="px-4 py-2 text-sm font-medium text-light-100 bg-accent-secondary/80 rounded-full border border-accent-secondary/40">
+                        <span className="px-4 py-2 text-sm font-medium text-white bg-brand-malibu rounded-full shadow-lg">
                             Supply Chain
                         </span>
-                        <span className="px-4 py-2 text-sm font-medium text-light-100 bg-dark-700/80 rounded-full border border-dark-700/60">
+                        <span className="px-4 py-2 text-sm font-medium text-white bg-brand-madison rounded-full shadow-lg">
                             Operations
                         </span>
                     </motion.div>
@@ -69,11 +69,11 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
-                        className="text-lg md:text-xl lg:text-2xl text-light-300 max-w-2xl mx-auto mb-8"
+                        className="text-lg md:text-xl lg:text-2xl text-brand-madison/80 max-w-2xl mx-auto mb-8 font-medium"
                     >
                         Transforming businesses through strategic planning and operational excellence.
                         Expert in change management, production planning, and business optimization
-                        with international exposure across <span className="text-accent-primary font-medium">Singapore</span> and <span className="text-accent-primary font-medium">Thailand</span>.
+                        with international exposure across <span className="text-brand-cobalt font-bold">Singapore</span> and <span className="text-brand-cobalt font-bold">Thailand</span>.
                     </motion.p>
 
                     {/* Location */}
@@ -81,19 +81,19 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.7 }}
-                        className="flex flex-wrap items-center justify-center gap-6 mb-12 text-light-300"
+                        className="flex flex-wrap items-center justify-center gap-6 mb-12"
                     >
-                        <div className="flex items-center gap-2 bg-accent-primary/80 rounded-full p-2">
-                            <MapPin size={16} className="text-dark-900" />
-                            <span className="text-sm font-medium text-dark-900">Lahore, Pakistan</span>
+                        <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-cobalt/10 shadow-sm">
+                            <MapPin size={16} className="text-brand-cobalt" />
+                            <span className="text-sm font-semibold text-brand-madison">Lahore, Pakistan</span>
                         </div>
-                        <div className="flex items-center gap-2 bg-accent-primary/80 rounded-full p-2">
-                            <Briefcase size={16} className="text-dark-900" />
-                            <span className="text-sm font-medium text-dark-900">Head of Department</span>
+                        <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-cobalt/10 shadow-sm">
+                            <Briefcase size={16} className="text-brand-cobalt" />
+                            <span className="text-sm font-semibold text-brand-madison">Head of Department</span>
                         </div>
-                        <div className="flex items-center gap-2 bg-accent-primary/80 rounded-full p-2">
-                            <Globe size={16} className="text-dark-900" />
-                            <span className="text-sm font-medium text-dark-900">International Exposure</span>
+                        <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-cobalt/10 shadow-sm">
+                            <Globe size={16} className="text-brand-cobalt" />
+                            <span className="text-sm font-semibold text-brand-madison">International Exposure</span>
                         </div>
                     </motion.div>
 
@@ -106,17 +106,17 @@ export default function Hero() {
                     >
                         <motion.a
                             href="#contact"
-                            whileHover={{ scale: 1.05 }}
+                            whileHover={{ scale: 1.05, y: -2 }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-8 py-4 text-sm font-semibold text-light-100 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-full hover:shadow-glow-red transition-all duration-300"
+                            className="px-8 py-4 text-sm font-bold text-white bg-gradient-to-r from-brand-cobalt to-brand-malibu rounded-full shadow-xl hover:shadow-brand-cobalt/40 transition-all duration-300"
                         >
                             Get in Touch
                         </motion.a>
                         <motion.a
                             href="#experience"
-                            whileHover={{ scale: 1.05 }}
+                            whileHover={{ scale: 1.05, y: -2 }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-8 py-4 text-sm font-semibold text-light-100 glass rounded-full hover:bg-dark-700/50 transition-all duration-300"
+                            className="px-8 py-4 text-sm font-bold text-brand-cobalt glass rounded-full hover:bg-white/60 transition-all duration-300 border border-brand-cobalt/20"
                         >
                             View Experience
                         </motion.a>
@@ -136,12 +136,12 @@ export default function Hero() {
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
-                            className="text-center p-6 glass rounded-2xl card-hover"
+                            className="text-center p-6 glass rounded-2xl card-hover border border-brand-cobalt/5"
                         >
-                            <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
+                            <div className="text-3xl md:text-4xl font-black gradient-text mb-2">
                                 {stat.value}
                             </div>
-                            <div className="text-sm text-light-300">{stat.label}</div>
+                            <div className="text-sm font-bold text-brand-madison/60">{stat.label}</div>
                         </motion.div>
                     ))}
                 </motion.div>
@@ -158,9 +158,9 @@ export default function Hero() {
                     href="#about"
                     animate={{ y: [0, 10, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="flex flex-col items-center gap-2 text-light-300 hover:text-light-100 transition-colors"
+                    className="flex flex-col items-center gap-2 text-brand-cobalt hover:text-brand-madison transition-colors"
                 >
-                    <span className="text-xs uppercase tracking-widest">Scroll</span>
+                    <span className="text-xs font-black uppercase tracking-widest">Scroll</span>
                     <ArrowDown size={20} />
                 </motion.a>
             </motion.div>

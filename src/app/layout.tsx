@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className="scroll-smooth">
-            <body className="bg-dark-900 text-light-100 antialiased">
+            <body className="bg-brand-linkwater text-brand-madison antialiased">
                 {children}
             </body>
         </html>

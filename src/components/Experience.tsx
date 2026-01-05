@@ -75,10 +75,10 @@ export default function Experience() {
     const [activeExp, setActiveExp] = useState(1);
 
     return (
-        <section id="experience" className="py-16 relative overflow-hidden bg-dark-900">
+        <section id="experience" className="py-24 relative overflow-hidden bg-brand-linkwater">
             {/* Background Effects */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-accent-secondary/5 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent-primary/5 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-96 h-96 bg-brand-malibu/10 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-72 h-72 bg-brand-cobalt/5 rounded-full blur-3xl" />
 
             <div className="container-custom relative z-10" ref={ref}>
                 {/* Section Header */}
@@ -89,10 +89,10 @@ export default function Experience() {
                     className="text-center mb-16"
                 >
                     <span className="number-badge">02</span>
-                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-4 text-light-100">
+                    <h2 className="text-4xl md:text-5xl font-black mt-4 mb-4 text-brand-madison">
                         Professional <span className="gradient-text">Experience</span>
                     </h2>
-                    <p className="text-light-300 max-w-2xl mx-auto">
+                    <p className="text-brand-madison/70 max-w-2xl mx-auto font-medium">
                         A decade of transforming organizations through strategic planning and operational excellence
                     </p>
                 </motion.div>
@@ -105,7 +105,7 @@ export default function Experience() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="lg:col-span-4"
                     >
-                        <div className="sticky top-32 space-y-2">
+                        <div className="sticky top-32 space-y-3">
                             {experiences.map((exp, index) => (
                                 <motion.button
                                     key={exp.id}
@@ -113,17 +113,23 @@ export default function Experience() {
                                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                                     onClick={() => setActiveExp(exp.id)}
-                                    className={`w-full p-4 rounded-xl text-left transition-all duration-300 group ${activeExp === exp.id
-                                        ? "glass border-l-2 border-accent-primary shadow-glow-dark/20"
-                                        : "hover:bg-accent-primary"
+                                    className={`w-full p-5 rounded-2xl text-left transition-all duration-300 group relative overflow-hidden ${activeExp === exp.id
+                                        ? "glass border border-brand-cobalt/20 shadow-xl"
+                                        : "hover:bg-white/40"
                                         }`}
                                 >
+                                    {activeExp === exp.id && (
+                                        <motion.div
+                                            layoutId="active-nav"
+                                            className="absolute left-0 top-0 bottom-0 w-1 bg-brand-cobalt"
+                                        />
+                                    )}
                                     <div className="flex items-center justify-between">
                                         <div>
-                                            <span className="text-xs text-light-300 group-hover:text-dark-900 font-medium">
+                                            <span className="text-xs text-brand-cobalt font-bold mb-1 block">
                                                 {exp.period}
                                             </span>
-                                            <h4 className={`font-semibold transition-colors ${activeExp === exp.id ? "text-light-100" : "text-light-300 group-hover:text-dark-900"
+                                            <h4 className={`font-bold transition-colors ${activeExp === exp.id ? "text-brand-madison" : "text-brand-madison/60 group-hover:text-brand-madison"
                                                 }`}>
                                                 {exp.company}
                                             </h4>
@@ -131,8 +137,8 @@ export default function Experience() {
                                         <ChevronRight
                                             size={18}
                                             className={`transition-all ${activeExp === exp.id
-                                                ? "text-accent-primary translate-x-0"
-                                                : "text-light-300/30 -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0"
+                                                ? "text-brand-cobalt translate-x-0"
+                                                : "text-brand-cobalt/20 -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0"
                                                 }`}
                                         />
                                     </div>
@@ -158,47 +164,48 @@ export default function Experience() {
                                     display: activeExp === exp.id ? "block" : "none",
                                 }}
                                 transition={{ duration: 0.4 }}
-                                className="glass rounded-2xl p-8"
+                                className="glass rounded-3xl p-8 border border-brand-cobalt/5 shadow-2xl shadow-brand-cobalt/5"
                             >
                                 {/* Header */}
-                                <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
+                                <div className="flex flex-wrap items-start justify-between gap-6 mb-8 border-b border-brand-cobalt/10 pb-6">
                                     <div>
-                                        <span className="inline-block px-3 py-1 text-xs font-medium text-light-200 bg-accent-primary/20 rounded-full mb-3">
+                                        <span className="inline-block px-4 py-1.5 text-xs font-black text-white bg-brand-cobalt rounded-full mb-4 shadow-md">
                                             {exp.type}
                                         </span>
-                                        <h3 className="text-2xl font-bold text-light-100 mb-2">{exp.role}</h3>
-                                        <div className="flex items-center gap-2 text-light-300">
-                                            <Building size={16} className="text-[#ffda1a]" />
+                                        <h3 className="text-2xl md:text-3xl font-black text-brand-madison mb-3">{exp.role}</h3>
+                                        <div className="flex items-center gap-2 text-brand-madison/70 font-bold">
+                                            <Building size={18} className="text-brand-cobalt" />
                                             <span>{exp.company}</span>
                                         </div>
                                     </div>
-                                    <div className="text-right">
-                                        <div className="flex items-center gap-2 text-light-300 mb-2">
-                                            <Calendar size={16} className="text-accent-primary" />
-                                            <span className="text-sm">{exp.period}</span>
+                                    <div className="flex flex-col gap-2">
+                                        <div className="flex items-center gap-2 text-brand-madison/60 font-medium">
+                                            <Calendar size={18} className="text-brand-cobalt" />
+                                            <span className="text-sm font-bold">{exp.period}</span>
                                         </div>
-                                        <div className="flex items-center gap-2 text-light-300">
-                                            <MapPin size={16} />
-                                            <span className="text-sm">{exp.location}</span>
+                                        <div className="flex items-center gap-2 text-brand-madison/60 font-medium">
+                                            <MapPin size={18} className="text-brand-cobalt" />
+                                            <span className="text-sm font-bold">{exp.location}</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Highlights */}
-                                <div className="space-y-4">
-                                    <h4 className="text-sm font-semibold text-light-200 uppercase tracking-wider">
+                                <div className="space-y-6">
+                                    <h4 className="text-sm font-black text-brand-cobalt uppercase tracking-widest flex items-center gap-2">
+                                        <div className="w-8 h-[2px] bg-brand-cobalt/30" />
                                         Key Achievements
                                     </h4>
-                                    <ul className="space-y-3">
+                                    <ul className="space-y-4">
                                         {exp.highlights.map((highlight, index) => (
                                             <motion.li
                                                 key={index}
                                                 initial={{ opacity: 0, x: -10 }}
                                                 animate={{ opacity: 1, x: 0 }}
                                                 transition={{ duration: 0.3, delay: index * 0.1 }}
-                                                className="flex items-start gap-3 text-light-300"
+                                                className="flex items-start gap-4 text-brand-madison/80 font-medium leading-relaxed"
                                             >
-                                                <span className="w-1.5 h-1.5 mt-2 bg-accent-primary rounded-full flex-shrink-0" />
+                                                <div className="w-2 h-2 mt-2.5 bg-brand-cobalt rounded-full flex-shrink-0 shadow-glow-blue" />
                                                 <span>{highlight}</span>
                                             </motion.li>
                                         ))}

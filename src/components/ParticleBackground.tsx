@@ -30,7 +30,7 @@ function ParticleField() {
         <Points ref={ref} positions={particlesPosition} stride={3} frustumCulled={false}>
             <PointMaterial
                 transparent
-                color="#ffda1a"
+                color="#0047ab"
                 size={0.02}
                 sizeAttenuation={true}
                 depthWrite={false}
@@ -55,10 +55,10 @@ function GlowingSphere() {
         <mesh ref={ref} position={[0, 0, 0]}>
             <icosahedronGeometry args={[2, 1]} />
             <meshBasicMaterial
-                color="#ffda1a"
+                color="#0047ab"
                 wireframe
                 transparent
-                opacity={0.2}
+                opacity={0.15}
             />
         </mesh>
     );
@@ -76,9 +76,9 @@ export default function ParticleBackground() {
                 <GlowingSphere />
             </Canvas>
             {/* Gradient Overlays */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark-900 pointer-events-none" />
-            <div className="absolute top-0 left-0 w-96 h-96 bg-accent-primary/10 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent-secondary/10 rounded-full blur-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-linkwater/20 pointer-events-none" />
+            <div className="absolute top-0 left-0 w-96 h-96 bg-brand-cobalt/5 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-malibu/10 rounded-full blur-3xl" />
         </div>
     );
 }
