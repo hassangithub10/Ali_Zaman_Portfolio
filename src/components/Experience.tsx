@@ -75,7 +75,7 @@ export default function Experience() {
     const [activeExp, setActiveExp] = useState(1);
 
     return (
-        <section id="experience" className="py-32 relative overflow-hidden bg-dark-900">
+        <section id="experience" className="py-16 relative overflow-hidden bg-dark-900">
             {/* Background Effects */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-accent-secondary/5 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent-primary/5 rounded-full blur-3xl" />

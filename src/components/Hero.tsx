@@ -43,7 +43,6 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="text-4xl md:text-7xl lg:text-8xl font-bold mb-6 mt-6"
                     >
-                        {/* <span className="text-light-100"></span> */}
                         <span className="gradient-text">ENGR. ALI ZAMAN</span>
                     </motion.h1>
 
@@ -129,7 +128,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 1 }}
-                    className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 max-w-4xl mx-auto"
+                    className="grid grid-cols-2 md:grid-cols-4 gap-6 m-10 max-w-4xl mx-auto"
                 >
                     {stats.map((stat, index) => (
                         <motion.div

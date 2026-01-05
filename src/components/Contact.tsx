@@ -79,7 +79,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="py-32 relative overflow-hidden bg-dark-800">
+        <section id="contact" className="py-16 relative overflow-hidden bg-dark-800">
             {/* Background Effects */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-accent-primary/5 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-secondary/5 rounded-full blur-3xl" />
