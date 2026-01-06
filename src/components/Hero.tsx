@@ -70,11 +70,17 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="flex flex-wrap items-center justify-center gap-3 mb-8"
                     >
-                        <span className="px-4 py-2 text-sm font-medium text-white bg-brand-cobalt rounded-full shadow-lg">
+                        <span className="px-4 py-2 text-sm font-medium text-white bg-brand-madison rounded-full shadow-lg">
                             Strategic Planning
                         </span>
-                        <span className="px-4 py-2 text-sm font-medium text-white bg-brand-malibu rounded-full shadow-lg">
+                        <span className="px-4 py-2 text-sm font-medium text-white bg-brand-cobalt rounded-full shadow-lg">
                             Supply Chain
+                        </span>
+                        <span className="px-4 py-2 text-sm font-medium text-white bg-brand-madison rounded-full shadow-lg">
+                            Apparel
+                        </span>
+                        <span className="px-4 py-2 text-sm font-medium text-white bg-brand-cobalt rounded-full shadow-lg">
+                            Brand
                         </span>
                         <span className="px-4 py-2 text-sm font-medium text-white bg-brand-madison rounded-full shadow-lg">
                             Operations
@@ -100,15 +106,15 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.7 }}
                         className="flex flex-wrap items-center justify-center gap-6 mb-12"
                     >
-                        <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-cobalt/10 shadow-sm">
+                        <div className="flex items-center gap-2 bg-brand-malibu/40 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-cobalt/10 shadow-sm">
                             <MapPin size={16} className="text-brand-cobalt" />
-                            <span className="text-sm font-semibold text-brand-madison">Lahore, Pakistan</span>
+                            <span className="text-sm font-semibold text-brand-madison ">Lahore, Pakistan</span>
                         </div>
-                        <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-cobalt/10 shadow-sm">
+                        <div className="flex items-center gap-2 bg-brand-malibu/40 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-cobalt/10 shadow-sm">
                             <Briefcase size={16} className="text-brand-cobalt" />
                             <span className="text-sm font-semibold text-brand-madison">Head of Department</span>
                         </div>
-                        <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-cobalt/10 shadow-sm">
+                        <div className="flex items-center gap-2 bg-brand-malibu/40 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-cobalt/10 shadow-sm">
                             <Globe size={16} className="text-brand-cobalt" />
                             <span className="text-sm font-semibold text-brand-madison">International Exposure</span>
                         </div>
@@ -133,7 +139,7 @@ export default function Hero() {
                             href="#experience"
                             whileHover={{ scale: 1.05, y: -2 }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-8 py-4 text-sm font-bold text-brand-cobalt glass rounded-full hover:bg-white/60 transition-all duration-300 border border-brand-cobalt/20"
+                            className="px-8 py-4 text-sm font-bold text-brand-cobalt bg-brand-malibu/20 rounded-full hover:bg-white/60 transition-all duration-300 border border-brand-cobalt/20"
                         >
                             View Experience
                         </motion.a>
