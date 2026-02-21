@@ -70,9 +70,9 @@ export default function About() {
                             <div className="relative glass rounded-3xl p-3 border-glow">
                                 <div className="w-full aspect-square rounded-2xl bg-gradient-to-br from-brand-linkwater to-white flex items-center justify-center overflow-hidden">
                                     <motion.img
-                                        src="/profile.png"
+                                        src="/alizaman.png"
                                         alt="Engr. Ali Zaman"
-                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                                         initial={{ filter: "grayscale(100%)" }}
                                         whileHover={{ filter: "grayscale(0%)" }}
                                     />
@@ -80,13 +80,13 @@ export default function About() {
                             </div>
 
                             {/* Floating Badge */}
-                            <motion.div
+                            {/* <motion.div
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 3, repeat: Infinity }}
                                 className="absolute -bottom-4 -right-4 px-6 py-3 glass rounded-full border border-brand-cobalt/20 shadow-xl"
                             >
                                 <span className="text-sm font-black gradient-text">13+ Years</span>
-                            </motion.div>
+                            </motion.div> */}
                         </div>
                     </motion.div>
 

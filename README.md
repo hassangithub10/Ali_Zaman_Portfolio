@@ -1,6 +1,6 @@
 # Engr. Ali Zaman Portfolio
 
-A modern, high-performance, and aesthetically premium professional portfolio website for Engr. Ali Zaman. Built with **Next.js 14**, **Tailwind CSS**, and **Three.js**.
+A modern, high-performance, and aesthetically premium professional portfolio website for Engr. Ali Zaman. Built with **Next.js 16**, **React 19**, **Tailwind CSS**, and **Three.js**.
 
 ![High-Contrast Theme](https://raw.githubusercontent.com/hassangithub10/Ali_Zaman_Portfolio/main/public/logo.png)
 
@@ -10,15 +10,17 @@ A modern, high-performance, and aesthetically premium professional portfolio web
 - **Interactive 3D Background**: Immersive particle system powered by `React Three Fiber`.
 - **Seamless Performance**: Lightning-fast transitions and smooth scrolling using `Framer Motion`.
 - **Responsive Layout**: Fully optimized for mobile, tablet, and desktop screens.
-- **Modern Tech Stack**: Leveraging Next.js 14 App Router for optimized routing and SEO.
+- **Modern Tech Stack**: Leveraging Next.js 16 App Router and Turbopack for optimized development and production builds.
 
 ## 🛠️ Tech Stack
 
-- **Core**: [Next.js 14](https://nextjs.org/)
+- **Core**: [Next.js 16](https://nextjs.org/) & [React 19](https://react.dev/)
+- **Build Tool**: [Turbopack](https://nextjs.org/docs/app/api-reference/turbopack)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **3D Rendering**: [Three.js](https://threejs.org/) & [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 - **Icons**: [Lucide React](https://lucide.dev/)
+- **Insights**: [@vercel/speed-insights](https://vercel.com/docs/speed-insights)
 
 ## 🎨 Color Palette
 
@@ -33,7 +35,7 @@ A modern, high-performance, and aesthetically premium professional portfolio web
 
 ### Prerequisites
 
-- Node.js 18.x or later
+- Node.js 20.x or later
 - npm or yarn
 
 ### Installation
